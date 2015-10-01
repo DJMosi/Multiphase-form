@@ -6,10 +6,6 @@
 
     <link rel = "stylesheet" href = "styles.css">
 
-        <style>
-
-        </style>
-
         <script>
         var fname, lname, gender, country;
             function _(x) {
@@ -59,6 +55,14 @@
                 alert("Please select country");
 
             }
+
+
+        }
+
+        function submitForm() {
+            _("multiphase").method = "post";
+            _("multiphase").action = "my_parser.php";
+            _("multiphase").submit();
 
 
         }

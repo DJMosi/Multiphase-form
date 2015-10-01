@@ -45,6 +45,21 @@
 
         }
 
+        function processPhase3(){
+            country = _("country").value;
+            if(country.length > 0) {
+                _("phase3").style.display = "none";
+                _("show_all_data").style.display = "block";
+
+            } else {
+                alert("Please select country");
+
+            }
+
+
+        }
+
+
 
 
         </script>
@@ -75,15 +90,15 @@
 
 <!--------------------------------phase 3 of the form------------------------------------------------------------->
             <div id="phase">
-                Gender: <select id="gender" name="gender"><option value=""></option>
+                Country: <select id="country" name="gender"><option value=""></option>
 
-                <option value="KE">Kenya</option>
-                <option value="UG">Uganda</option>
-                <option value="TZ">Tanzania</option>
-                <option value="BU">Burundi</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Burundi">Burundi</option>
 
                 </select><br>
-                <button onclick="processPhase2()">Continue</button>
+                <button onclick="processPhase3()">Continue</button>
             </div>
 
 <!---------------------------------------------------------------------------------------------------------------->

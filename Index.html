@@ -50,6 +50,10 @@
             if(country.length > 0) {
                 _("phase3").style.display = "none";
                 _("show_all_data").style.display = "block";
+                _("display_fname").innerHTML = fname;
+                _("display_lname").innerHTML = lname;
+                _("display_gender").innerHTML = gender;
+                _("display_country").innerHTML = country;
 
             } else {
                 alert("Please select country");
@@ -108,7 +112,7 @@
                  Last Name: <span id="display_lname"></span><br>
                  Gender: <span id="display_gender"></span><br>
                  Country: <span id="display_country"></span><br>
-
+                 <button onclick="submitForm()">Submit Data</button>
             </div>
 
         </form>

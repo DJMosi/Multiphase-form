@@ -30,6 +30,23 @@
 
 
         }
+
+        function processPhase2(){
+            gender = _("gender").value;
+            if(gender.length > 2 && lname.length > 2) {
+                _("phase2").style.display = "none";
+                _("phase3").style.display = "block";
+
+            } else {
+                alert("Please fill in the fields");
+
+            }
+
+
+        }
+
+
+
         </script>
 
     </head>

@@ -1,12 +1,19 @@
 form#multiphase {
     border:#000 1px solid;
     padding: 24px;
-    width: 3503px;
+    width: 350px;
     margin-left: 40%;
 }
 
-form#multiphase > #phase1, #phase2, #phase3{
+#phase1, #phase2, #phase3{
     display: none;
 
 
 }
+
+form#multiphase > #phase2, #phase3, #show_all_data{
+    display: none;
+
+
+}
+
